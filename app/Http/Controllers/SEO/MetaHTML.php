@@ -19,7 +19,7 @@ class MetaHTML
     }
 
     public static function makeOpenGraphTag($property, $content){
-        return '<meta property="og:'. $property .'" content="'. $content .'">';
+        return '<meta property="og:'. $property .'" content="'. $content .'" />';
     }
 
     public static function makeTwitterTag($property, $content){
