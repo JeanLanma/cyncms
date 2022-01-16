@@ -6,9 +6,9 @@
 
         @if(isset($meta_tags))
         <!-- SEO Tags -->
-            @foreach($meta_tags as $meta_tag)
-                {!! $meta_tag !!}
-            @endforeach
+        @foreach($meta_tags as $meta_tag)
+        {!! $meta_tag !!}
+        @endforeach
         <!-- /SEO Tags -->
         @endif
         <title>CYN CMS</title>
