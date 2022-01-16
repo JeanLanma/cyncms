@@ -11,10 +11,10 @@ class MetaHTML
 
     public static function getDefaults(){
         return [
+            MetaHTML::makeOpenGraphTag('type', 'website'),
             MetaHTML::makeOpenGraphTag('title', MetaHTML::TITLE),
             MetaHTML::makeOpenGraphTag('description', MetaHTML::DESCRIPTION),
             MetaHTML::makeOpenGraphTag('image', MetaHTML::IMAGESRC),
-            MetaHTML::makeOpenGraphTag('type', 'website'),
         ];
     }
 
