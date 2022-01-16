@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $meta_tags = MetaHTML::getDefaults();
-    return view('welcome');
+    return view('welcome', compact('meta_tags'));
 });
 
 Route::get('/dashboard', function () {
