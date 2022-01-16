@@ -14,7 +14,7 @@ class MetaHTML
             MetaHTML::makeOpenGraphTag('type', 'website'),
             MetaHTML::makeOpenGraphTag('title', MetaHTML::TITLE),
             MetaHTML::makeOpenGraphTag('description', MetaHTML::DESCRIPTION),
-            MetaHTML::makeOpenGraphTag('image', MetaHTML::IMAGESRC),
+            MetaHTML::makeOpenGraphTag('image', 'asset('.MetaHTML::IMAGESRC.')'),
         ];
     }
 

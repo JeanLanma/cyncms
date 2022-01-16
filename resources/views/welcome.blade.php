@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @if(isset($meta_tags))
-        <!-- SEO Tags -->
-        @foreach($meta_tags as $meta_tag)
-        {!! $meta_tag !!}
-        @endforeach
-        <!-- /SEO Tags -->
-        @endif
+    @if(isset($meta_tags))
+    <!-- SEO Tags -->
+    @foreach($meta_tags as $meta_tag)
+    {!! $meta_tag !!}
+    @endforeach
+    <!-- /SEO Tags -->
+    @endif
+
         <title>CYN CMS</title>
 
         <!-- Fonts -->
