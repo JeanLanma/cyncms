@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- OpenGraph Tags -->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Cynistal WEB">
-        <meta property="og:description" content="Sitio Web de portafolio de Jean Lessar">
-        <meta property="og:image" content="{{ asset('images/me.jpeg') }}">
-        <!-- Prepara la imagen para agregarla -->
+        @if(isset($meta_tags))
+        <!-- SEO Tags -->
+            @foreach($meta_tags as $meta_tag)
+                {!! $meta_tag !!}
+            @endforeach
+        <!-- /SEO Tags -->
+        @endif
         <title>CYN CMS</title>
 
         <!-- Fonts -->
